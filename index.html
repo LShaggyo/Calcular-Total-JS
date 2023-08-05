@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcualar Total</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="card">
+      <article class="container-article">
+        <div class="container-img">
+          <img
+            src="./assets/img/torres-gamer.jpeg"
+            alt="cinco computadoras gamers"
+          />
+        </div>
+        <div class="container-info">
+          <div class="container-text">
+            <h1>Computadoras <span>Gamers</span></h1>
+          </div>
+          <div class="container-input">
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" min="1" max="20" />
+          </div>
+          <div class="container-input">
+            <label for="">Especificaciones</label>
+            <select id="espec">
+              <option value="" selected>Seleccionar Especificación</option>
+              <option value="gama baja">
+                Gama Baja: Procesador básico, 4-8 GB de RAM, tarjeta gráfica
+                integrada, disco duro tradicional.
+              </option>
+              <option value="gama media">
+                Gama Media: Procesador de rango medio, 8-16 GB de RAM, tarjeta
+                gráfica de nivel básico o medio, SSD.
+              </option>
+              <option value="gama alta">
+                Gama Alta: Procesador de alta gama, 16-32 GB de RAM, tarjeta
+                gráfica de alto rendimiento, SSD rápido.
+              </option>
+              <option value="gama extrema">
+                Gama Extrema: Procesadores multi-core, 32-64 GB de RAM, tarjetas
+                gráficas potentes, almacenamiento NVMe.
+              </option>
+              <option value="gama diseno">
+                Gama Diseño: Procesador potente, 16-32 GB de RAM, tarjeta
+                gráfica optimizada, pantallas calibradas, almacenamiento rápido
+              </option>
+            </select>
+            <p id="price-text">Precio:</p>
+            <span id="price"></span>
+            <label id="color-text" for="color">Color Gabinete</label>
+            <input
+              type="color"
+              name="color"
+              id="color"
+              list="presets"
+              value="#000000"
+            />
+            <input id="total" type="button" value="Calcular Total" />
+          </div>
+        </div>
+      </article>
+      <article class="card-2 hidden" id="card-2">
+        <p>Total: <span id="price-total"></span></p>
+        <p>Cantidad: <span id="total-num"></span></p>
+        <div class="container-color">
+          <p>Color:</p>
+          <div class="select-color" id="color-selected"></div>
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src="./assets/js/main.js"></script>
+</html>
